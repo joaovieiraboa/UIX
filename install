@@ -4,7 +4,7 @@ import subprocess, os, random, string, sys, shutil, socket, time, io
 if sys.version_info.major != 3:
     print("Please run with python3.")
     sys.exit(1)
-
+rDownloadURL = {"main": "https://www.dropbox.com/s/djkbx3ib7ggpbjs/xui.tar.gz?dl=0"}
 rPath = os.path.dirname(os.path.realpath(__file__))
 rPackages = ["cpufrequtils", "iproute2", "python", "net-tools", "dirmngr", "gpg-agent", "software-properties-common", "libmaxminddb0", "libmaxminddb-dev", "mmdb-bin", "libcurl4", "libgeoip-dev", "libxslt1-dev", "libonig-dev", "e2fsprogs", "wget", "mariadb-server", "sysstat", "alsa-utils", "v4l-utils", "mcrypt", "certbot", "iptables-persistent", "libjpeg-dev", "libpng-dev", "php-ssh2", "xz-utils", "zip", "unzip"]
 rRemove = ["mysql-server"]
