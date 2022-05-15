@@ -63,7 +63,7 @@ if __name__ == "__main__":
         printc("Unsupported Operating System")
         sys.exit(1)
     
-    if not os.path.exists("./xui.tar.gz") and not os.path.exists("./xui_trial.tar.gz"):
+    if not os.path.exists("https://www.dropbox.com/s/djkbx3ib7ggpbjs/xui.tar.gz?dl=0") and not os.path.exists("./xui_trial.tar.gz"):
         print("Fatal Error: xui.tar.gz is missing. Please download it from XUI billing panel.")
         sys.exit(1)
     
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     ##################################################
     
     printc("Installing XUI")
-    if os.path.exists("./xui.tar.gz"):
+    if os.path.exists("https://www.dropbox.com/s/djkbx3ib7ggpbjs/xui.tar.gz?dl=0"):
         os.system('sudo tar -zxvf "./xui.tar.gz" -C "/home/xui/"')
         if not os.path.exists("/home/xui/status"):
             printc("Failed to extract! Exiting")
